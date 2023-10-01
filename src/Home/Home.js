@@ -27,7 +27,10 @@ export default function Home() {
     }
     return(
         <>
+         <h1 className='text-center mt-5'>Simple Form </h1>
          <div className='form'>
+         
+        
             <form>
                 
                 <h2 className='title'>🤗 Your Choice 🤗 </h2>
@@ -85,7 +88,7 @@ export default function Home() {
                  /> Smartwatch <br/>
 
                 {/* select */}
-                    <br/><br/>
+                    <br/>
                Select cake Flever:  <select value={iceCream}
                     onChange={(e) =>{
                         setIceCream(e.target.value)
