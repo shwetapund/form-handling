@@ -1,0 +1,13 @@
+.form{
+    background-color: 	 #ffcce6;
+    border: 1px solid   #ff3399;
+    width: 350px;
+    margin: 30px auto;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+}
