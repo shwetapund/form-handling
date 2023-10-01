@@ -5,7 +5,7 @@ export default function Home() {
     const [fullName, setFullName] = useState('');
     const [gender, setGender] = useState('female');
     const [mobile, setMobile] = useState(false);
-    const [laptop, setLaptop] = useState(false);
+    const [laptop, setLaptop] = useState(true);
     const [smartWatch, setSmartWatch] = useState(false);
     return(
         <>
@@ -42,9 +42,23 @@ export default function Home() {
                  checked={gender==="female"}
                  /> female <br/><br/>
 
-                 <input type="checkbox" value="mobile"  /> Mobile <br/>
-                 <input type="checkbox" value="mobile"  /> Laptop <br/>
-                 <input type="checkbox" value="mobile"  /> Smartwatch <br/>
+                 <input 
+                 type="checkbox"
+                  value="mobile" 
+                  checked={mobile}
+                   /> Mobile <br/>
+
+                 <input 
+                 type="checkbox" 
+                 value="laptop" 
+                 checked={laptop}
+                  /> Laptop <br/>
+
+                 <input 
+                 type="checkbox" 
+                 value="smartWatch"
+                 checked={smartWatch}  
+                 /> Smartwatch <br/>
             </form>
         </div>
         </>
